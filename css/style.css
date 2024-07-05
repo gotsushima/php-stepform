@@ -1,0 +1,845 @@
+@charset "UTF-8";
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none !important;
+  }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo,
+      メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+    line-height: 1;
+  }
+  header img {
+    width: 100%;
+  }
+  .fv img {
+    width: 100%;
+  }
+  .entry-box {
+    width: 100%;
+    margin: auto;
+    background: #fbf9f6;
+  }
+  .entry-box img {
+    width: 100%;
+  }
+  .entry-box .list-step {
+    padding-bottom: 45%;
+  }
+  .entry-box .step-img {
+    margin-bottom: 2%;
+  }
+  .new-arrivals {
+    text-align: right;
+    font-size: 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin: 0 3vw 3vw 0;
+  }
+  .new-arrivals .new-arrivals-box {
+    background: red;
+    color: #fff;
+    padding: 1vw 0;
+    margin-left: 1vw;
+    border-radius: 0.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 27%;
+  }
+  .new-arrivals .new-arrivals-box img {
+    width: 12%;
+    margin-left: 3%;
+  }
+  .form-item {
+    margin: 0 5% 6%;
+  }
+  .form-item dd {
+    font-size: 0;
+  }
+  .form-item dt {
+    margin-bottom: 2vw;
+    font-size: 4vw;
+    font-weight: bold;
+    position: relative;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .form-item dt span {
+    font-size: 5vw;
+    color: #ff9000;
+    margin-right: 0.5vw;
+  }
+  .form-item .small {
+    font-size: 3.5vw;
+    text-align: center;
+    font-weight: normal;
+  }
+  .form-item .sub {
+    font-size: 3.3vw;
+    text-align: center;
+  }
+  .form-item .sub .orange {
+    font-size: 3.3vw;
+    color: #ff9000;
+    margin-right: 0;
+  }
+  .form-item .marker {
+    background: yellow;
+    font-size: inherit;
+    margin: inherit;
+    color: inherit;
+  }
+  .form-item .optional:after {
+    content: "";
+    padding: 1.3% 1.5%;
+    margin-left: 2%;
+    line-height: 1;
+    font-size: 3.2vw;
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 22%;
+  }
+  .form-item .optional:after {
+    content: "任意";
+    background: #b4b4b4;
+  }
+  .form-item input[type="checkbox"]:checked + span,
+  .form-item input[type="radio"]:checked + span {
+    background-color: #ffebd1;
+  }
+  .form-item input[type="text"],
+  .form-item input[type="mail"],
+  .form-item input[type="tel"],
+  .form-item select {
+    width: 100%;
+    height: 43px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid #b5b5b5;
+    background: #fff;
+    font-size: 16px;
+    line-height: 43px;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #000 !important;
+  }
+  .form-item input[type="text"],
+  .form-item input[type="mail"],
+  .form-item input[type="tel"] {
+    padding: 8px 15px;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+  .form-item input[type="checkbox"],
+  .form-item input[type="radio"] {
+    display: none;
+  }
+  .form-item select::-ms-expand {
+    display: none;
+  }
+  .form-item dd > span {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    font-size: 3.5vw;
+  }
+  .form-item .select-arrow {
+    position: relative;
+  }
+  .form-item .select-arrow:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    font-weight: 900;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+  }
+  .form-item .pref-box {
+    width: 48%;
+    margin-right: 3%;
+  }
+  .form-item .pref-box:last-child {
+    margin-right: 0;
+  }
+  .form-item .birth-box {
+    display: inline;
+    margin-right: 3%;
+    width: 48%;
+    margin: auto;
+    display: block;
+  }
+  .form-item .error {
+    margin-top: 5px;
+    font-size: 3.5vw;
+  }
+  .form-item .form-check-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .form-item .form-check-btn li {
+    margin: 1.5vw 0;
+    width: 48%;
+  }
+  .form-item .form-check-btn li:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+  .form-item .form-check-btn li label > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2% 5%;
+    height: 41vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 4vw;
+    text-align: center;
+    border: 0.8vw solid #ff9000;
+    border-radius: 1vw;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-tap-highlight-color: initial;
+    background: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .form-item .form-check-btn li label > span img {
+    width: 80%;
+    margin-bottom: -1vw;
+  }
+  #step1 .form-item .form-check-btn li label > span img.icon {
+    width: 6vw;
+  }
+  .button-area {
+    margin: 2% auto 0;
+    width: 92%;
+  }
+  .button-area.center {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .button-area p {
+    font-size: 3vw;
+    margin: 0 0 2vw;
+  }
+  .button-area p a {
+    text-decoration: underline;
+  }
+  .button-area button {
+    height: 12vw;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  .button-area button:after {
+    font-family: "Font Awesome 5 Free";
+    content: "";
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .button-area button:disabled {
+    opacity: 0.5;
+  }
+  .button-area .nextbtn {
+    width: 90%;
+    background: #ff9000;
+    -webkit-box-shadow: 0 2px 0px rgba(195, 113, 16, 0.8);
+    box-shadow: 0 2px 0px rgba(195, 113, 16, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .button-area .nextbtn .btn-text {
+    font-size: 4vw;
+  }
+  .button-area .nextbtn .free {
+    border: 1px solid #fff;
+    margin-right: 3%;
+    padding: 0.5vw 1vw;
+  }
+  .button-area .nextbtn:after {
+    content: "\f105";
+    right: 4%;
+  }
+  .button-area .backbtn {
+    width: 25%;
+    padding: 0 0 0 2%;
+    background: #c7c7c7;
+    -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  .button-area .backbtn:after {
+    content: "\f104";
+    left: 8%;
+  }
+  .button-area .btn-newline {
+    font-size: 14px;
+  }
+  .button-area .btn-newline:after {
+    font-size: 150%;
+  }
+  p.error {
+    color: #f00;
+  }
+  .thanks {
+    line-height: 1.7;
+  }
+  .thanks .thanks-fv {
+    background: #ff9000;
+    padding: 3vw;
+    font-size: 4.3vw;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  .thanks .thanks-content {
+    padding: 6vw 4%;
+    border: 5vw solid #ffefbf;
+    background: #fff;
+  }
+  .thanks .thanks-content p {
+    text-align: center;
+    font-size: 3.6vw;
+  }
+  .thanks .thanks-content .bold {
+    font-weight: bold;
+    font-size: 4.5vw;
+    margin-bottom: 3vw;
+  }
+  .thanks .thanks-content .marker {
+    background-image: linear-gradient(transparent 60%, #fffc00 60%);
+  }
+  .thanks .thanks-content .orange {
+    color: #ff9000;
+    font-weight: bold;
+  }
+  .thanks .thanks-content .yellow {
+    color: #fffc00;
+  }
+  .thanks .thanks-content .image {
+    width: 40%;
+    margin: 2% auto 0;
+  }
+  .thanks .thanks-content .note {
+    font-size: 2.6vw;
+    margin: 6% 0;
+  }
+  .thanks .thanks-content .linebutton {
+    width: 90%;
+    margin: auto;
+  }
+  .thanks .thanks-content .title {
+    background: #ff9000;
+    padding: 3vw;
+    font-size: 4.3vw;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 12% 0 6%;
+  }
+  .thanks .thanks-content .point {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .thanks .thanks-content .point li {
+    width: 46%;
+  }
+  .thanks .thanks-content .point li p {
+    text-align: left;
+    margin: 6% 0 15%;
+  }
+  footer {
+    padding: 1rem;
+    background: #ff9000;
+    text-align: center;
+    font-size: 3vw;
+    color: #fff;
+  }
+  footer .license {
+    color: #fff;
+    font-size: 2.4vw;
+    line-height: 1.6;
+    margin-top: 4%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .sp {
+    display: none !important;
+  }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo,
+      メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+    line-height: 1;
+    background: #fbf9f6;
+  }
+  img {
+    width: 100%;
+  }
+  a:hover {
+    opacity: 0.9;
+  }
+  header {
+    width: 1000px;
+    margin: auto;
+  }
+  .fv {
+    width: 1000px;
+    margin: auto;
+  }
+  .entry-box {
+    width: 1000px;
+    margin: auto;
+  }
+  .entry-box .list-step {
+    padding-bottom: 160px;
+  }
+  .entry-box .step-img {
+    margin-bottom: 1rem;
+    text-align: center;
+    background: #ff9000;
+  }
+  .entry-box .step-img img {
+    width: 600px;
+  }
+  .new-arrivals {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  .new-arrivals .new-arrivals-box {
+    background: red;
+    color: #fff;
+    padding: 0.5rem 0;
+    margin-left: 0.5rem;
+    border-radius: 0.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 9rem;
+  }
+  .new-arrivals .new-arrivals-box img {
+    width: 1rem;
+    margin-left: 0.5rem;
+  }
+  .form-item {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .form-item dt {
+    width: 330px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    line-height: 1.5;
+  }
+  .form-item dt span {
+    color: #ff9000;
+    margin-right: 5px;
+  }
+  .form-item .small {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-weight: normal;
+  }
+  .form-item .sub {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding-right: 40px;
+    line-height: 1.7;
+  }
+  .form-item .sub .orange {
+    font-size: 0.9rem;
+    color: #ff9000;
+    margin-right: 0;
+  }
+  .form-item .marker {
+    background: yellow;
+    margin: inherit;
+    color: inherit;
+  }
+  .form-item .optional:after {
+    content: "";
+    padding: 5px;
+    margin-left: 5px;
+    line-height: 1;
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 135px;
+    width: 45px;
+    text-align: center;
+  }
+  .form-item .optional:after {
+    content: "任意";
+    background: #b4b4b4;
+    font-size: 0.9rem;
+  }
+  .form-item dd {
+    width: 670px;
+  }
+  .form-item dd > span {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    font-size: 1.2rem;
+  }
+  .form-item input[type="checkbox"]:checked + span,
+  .form-item input[type="radio"]:checked + span {
+    background-color: #ffebd1;
+  }
+  .form-item input[type="text"],
+  .form-item input[type="mail"],
+  .form-item input[type="tel"],
+  .form-item select {
+    width: 100%;
+    height: 43px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid #b5b5b5;
+    background: #fff;
+    font-size: 16px;
+    line-height: 43px;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #000 !important;
+  }
+  .form-item input[type="text"],
+  .form-item input[type="mail"],
+  .form-item input[type="tel"] {
+    padding: 8px 15px;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+  .form-item input[type="checkbox"],
+  .form-item input[type="radio"] {
+    display: none;
+  }
+  .form-item select::-ms-expand {
+    display: none;
+  }
+  .form-item .select-arrow {
+    position: relative;
+  }
+  .form-item .select-arrow:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    font-weight: 900;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+  }
+  .form-item .pref-box {
+    width: 48%;
+    margin-right: 3%;
+  }
+  .form-item .pref-box:last-child {
+    margin-right: 0;
+  }
+  .form-item .birth-box {
+    width: 48%;
+    display: block;
+  }
+  .form-item .error {
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+  .form-item .form-check-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .form-item .form-check-btn li {
+    margin: 10px 0;
+    width: 47%;
+  }
+  .form-item .form-check-btn li label > span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 80px;
+    font-size: 1.2rem;
+    border: 2px solid #ff9000;
+    border-radius: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-tap-highlight-color: initial;
+    background: #fff;
+    font-weight: bold;
+    line-height: 1.4;
+    padding-left: 15px;
+  }
+  .form-item .form-check-btn li label > span img {
+    width: 70px;
+    margin-right: 15px;
+  }
+  #step1 .form-item .form-check-btn li label > span img.icon {
+    width: 25px;
+  }
+  .button-area {
+    margin: 3rem auto 0;
+  }
+  .button-area.center {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .button-area p {
+    margin: 0 0 20px;
+  }
+  .button-area p a {
+    text-decoration: underline;
+  }
+  .button-area button {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  .button-area button:after {
+    font-family: "Font Awesome 5 Free";
+    content: "";
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .button-area button:disabled {
+    opacity: 0.5;
+  }
+  .button-area .nextbtn {
+    width: 500px;
+    height: 80px;
+    background: #ff9000;
+    -webkit-box-shadow: 0 2px 0px rgba(195, 113, 16, 0.8);
+    box-shadow: 0 2px 0px rgba(195, 113, 16, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .button-area .nextbtn .btn-text {
+    font-size: 1.5rem;
+  }
+  .button-area .nextbtn .free {
+    border: 1px solid #fff;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  .button-area .nextbtn:after {
+    content: "\f105";
+    right: 20px;
+  }
+  .button-area .backbtn {
+    width: 150px;
+    height: 60px;
+    background: #c7c7c7;
+    -webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  .button-area .backbtn:after {
+    content: "\f104";
+    left: 15px;
+  }
+  .button-area .btn-newline {
+    font-size: 14px;
+  }
+  .button-area .btn-newline:after {
+    font-size: 150%;
+  }
+  p.error {
+    color: #f00;
+  }
+  .thanks {
+    line-height: 1.7;
+  }
+  .thanks .thanks-fv {
+    background: #e69f4f;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  .thanks .thanks-content {
+    padding: 3rem 6rem;
+    border: 3rem solid #ffefbf;
+    background: #fff;
+  }
+  .thanks .thanks-content p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .thanks .thanks-content .bold {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  .thanks .thanks-content .marker {
+    background-image: linear-gradient(transparent 60%, #fffc00 60%);
+  }
+  .thanks .thanks-content .orange {
+    color: #ff9000;
+    font-weight: bold;
+  }
+  .thanks .thanks-content .yellow {
+    color: #fffc00;
+  }
+  .thanks .thanks-content .image {
+    width: 35%;
+    margin: 2% auto 0;
+  }
+  .thanks .thanks-content .note {
+    font-size: 0.7rem;
+    margin: 4% 0;
+    text-align: center;
+  }
+  .thanks .thanks-content .linebutton {
+    width: 400px;
+    margin: auto;
+  }
+  .thanks .thanks-content .title {
+    background: #ff9000;
+    padding: 15px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 10% 0 4%;
+  }
+  .thanks .thanks-content .point {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .thanks .thanks-content .point li {
+    width: 45%;
+  }
+  .thanks .thanks-content .point li p {
+    text-align: left;
+    margin: 4% 0 12%;
+  }
+  footer {
+    padding: 1.5rem;
+    background: #ff9000;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  footer .license {
+    color: #fff;
+    font-size: 0.7rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+  }
+}
